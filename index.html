@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="./script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="js/jquery.animateNumbers.min"></script>
+    <script src="/path/to/cdn/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                if($(window).scrollTop() > 100){
+                    $(".navbar").addClass("scroll");   
+                }
+                else{
+                    $(".navbar").removeClass("scroll");
+                }
+            })
+        })
+        // $({ countNum: $('.no b').html() }).animate({ countNum: 700000 }, {
+        //     duration: 1000,
+        //     easing: 'linear',
+
+        //     step: function () {
+        //     $('.no').html(Math.floor(this.countNum) + "+").toString.toLocaleString('en');
+        // },
+        // complete: function () {
+        //     $('.no').html(this.countNum + "+");
+        //     //alert('finished');
+        // }
+        // });
+
+    </script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT Sans">
+    <title>Cogoport - Book & Manage Shipments & Cargo Online</title>
+    <link rel="icon" type="image/x-icon" href="https://www.cogoport.com/favicon-32x32.png">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/f379921e19.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wholePage">
+
+        <div class="notificationBar">
+            <div class="notificationDeal">
+                <div class="notificationLogo">
+                    <img src="./Pictures/cogoport_icon.png" alt="Company Logo" class="notificationLogo1">
+                </div>
+                <div class="notificationText">
+                    <b class="notificationText1" style="color:white">Limited Time Offer: Get 15% off on all Cogo Assured Rates. </b>
+                        <b class="notificationText1" style="color: #ebbe00;">Book Today!</b>
+                </div>
+            </div>
+            <div class="notificationCross">
+                <img src="./Pictures/icons8-cross-mark-16.png" alt="cross" class="notificationCross1">
+            </div>
+        </div>
+
+        <nav class="navbar">
+            <div class="navbarLogo">
+                <img src="./Pictures/1.PNG" alt="Company Logo" class="logo">
+            </div>
+            <div class="navbarEl">
+                <span class="el"><b>Products</b> <i class="fa fa-sort-desc" style="margin-left:4px;" aria-hidden="true"></i></span>
+                <span class="el"><b>Partners</b> <i class="fa fa-sort-desc"style="margin-left:4px;" aria-hidden="true"></i></span>
+                <span class="el"><b>Tools</b> <i class="fa fa-sort-desc" style="margin-left:4px;"aria-hidden="true"></i></span>
+                <span class="el"><b>Company</b> <i class="fa fa-sort-desc" style="margin-left:4px;"aria-hidden="true"></i></span>
+                <span class="el"><b>Knowledge Center</b> <i class="fa fa-sort-desc"style="margin-left:4px;" aria-hidden="true"></i></span>
+                <span class="el"><b>Contact Us</b> </span>
+            </div> 
+            <div class="navbarAuth">
+                <svg xmlns="http://www.w3.org/2000/svg" class="log" viewBox="0 0 27 27" ><path fill="#fff" d="M13.368 26.485c6.946 0 12.577-5.63 12.577-12.576 0-6.946-5.631-12.576-12.577-12.576C6.423 1.333.792 6.963.792 13.909c0 6.946 5.631 12.576 12.576 12.576Z"></path><path fill="#231F20" d="M13.368.843a13.007 13.007 0 0 1 7.306 2.232 13.1 13.1 0 0 1 4.73 5.748 13.048 13.048 0 0 1-1.2 12.391 13.1 13.1 0 0 1-5.75 4.729 13.048 13.048 0 0 1-12.39-1.2 13.1 13.1 0 0 1-4.734-5.748A13.049 13.049 0 0 1 2.535 6.603 13.1 13.1 0 0 1 8.283 1.87 12.984 12.984 0 0 1 13.368.843Zm0 25.152a12.027 12.027 0 0 0 6.757-2.064 12.122 12.122 0 0 0 4.378-5.318 12.069 12.069 0 0 0-1.112-11.462 12.122 12.122 0 0 0-5.318-4.38A12.07 12.07 0 0 0 6.611 3.886a12.123 12.123 0 0 0-4.38 5.318 12.07 12.07 0 0 0 1.115 11.462 12.122 12.122 0 0 0 5.318 4.377 12.01 12.01 0 0 0 4.704.952Z"></path><path fill="#fff" d="M21.738 15.464c-2.374 7.394-12.709 6.916-15.1.964l15.1-.964Z"></path><path fill="#231F20" d="M14.02 21.442a9.571 9.571 0 0 1-2.182-.25 9 9 0 0 1-2.34-.901 7.364 7.364 0 0 1-3.315-3.681.49.49 0 1 1 .908-.365 6.4 6.4 0 0 0 2.883 3.192 8.005 8.005 0 0 0 2.086.8 8.6 8.6 0 0 0 2.267.22 7.826 7.826 0 0 0 4.172-1.333 6.963 6.963 0 0 0 1.638-1.577 7.627 7.627 0 0 0 1.134-2.233.488.488 0 1 1 .932.3 8.608 8.608 0 0 1-1.28 2.519 7.918 7.918 0 0 1-1.869 1.8 8.8 8.8 0 0 1-4.69 1.5c-.116.006-.23.009-.345.009ZM18.71 11.148c-.5 0-.889-.57-.889-1.3 0-.73.391-1.3.89-1.3.497 0 .888.57.888 1.3 0 .73-.39 1.3-.889 1.3Z"></path><path fill="#231F20" d="M18.71 10.87c.338 0 .612-.457.612-1.02s-.274-1.02-.612-1.02c-.338 0-.612.457-.612 1.02s.274 1.02.612 1.02ZM8.416 11.35c.491 0 .89-.58.89-1.297 0-.716-.399-1.297-.89-1.297-.49 0-.889.58-.889 1.297 0 .716.398 1.297.89 1.297Z"></path><path fill="#231F20" d="M7.805 10.053c0 .563.274 1.02.612 1.02.338 0 .612-.457.612-1.02s-.274-1.02-.612-1.02c-.338 0-.612.456-.612 1.02Z"></path><path fill="#fff" d="M14.375 8.83c1.32 1.793 1.888 3.245.9 4.476-.988 1.231-3.655.036-3.655.036"></path><path fill="#231F20" d="M13.851 14.354a4.813 4.813 0 0 1-.867-.085 7.61 7.61 0 0 1-1.568-.478.489.489 0 1 1 .4-.893c.438.185.894.322 1.36.411 1.058.19 1.516-.063 1.714-.308a1.719 1.719 0 0 0 .324-1.6 6.89 6.89 0 0 0-1.234-2.276.489.489 0 0 1 .788-.58 7.766 7.766 0 0 1 1.4 2.622c.11.415.127.849.051 1.27-.088.434-.281.84-.563 1.181-.326.39-.789.64-1.294.7-.169.025-.34.037-.51.036Z"></path></svg>
+                <span style="font-size: 12px;font-family:Ubuntu,sans-serif;font-weight: 500;"><b>login</b></span>
+                <button class="signupbtn" style="font-size: 12px;font-family:PT Sans,sans-serif;font-weight: 500;"><b>Sign Up</b></button>
+            </div>
+        </nav>
+
+        <div class="strtbar">
+            <div class="sbtext">
+                <h1 style="font-family: Ubuntu,sans-serif;"><b>Grow Faster, Go Global.</b></h1>
+                <p style="font-family: PT Sans,sans-serif;">
+                    Strengthen your Supply Chain, and Scale your Business
+                    <br>
+                    with Reliable Shipping and Cashflows.
+                </p>
+                <p style="font-family: PT Sans,sans-serif;">
+                    <b>Talk to us now!</b>
+                </p>
+            </div>
+            <div class="sbg">
+                <video width="595" height="287" autoplay muted loop>
+                    <source src="./Pictures/updated_gif_1.webm" type="video/webm">
+                </video>
+            </div>
+        </div>
+
+        <div class="nmbr">
+            <div class="value">
+                <div class="no">
+                    <b>180+</b>
+                </div>
+                <div class="noval">
+                    <b>Countries Served</b>
+                </div>
+            </div>
+            <div class="value">
+                <div class="no">
+                    <b>10,000</b>
+                </div>
+                <div class="noval">
+                    <b>Ports Pairs Served</b>
+                </div>
+            </div>
+            <div class="value">
+                <div class="no">
+                    <b>30,000</b>
+                </div>
+                <div class="noval">
+                    <b>Tons of Air Cargo Moved</b>
+                </div>
+            </div>
+            <div class="value">
+                <div class="no" data-val="4000">
+                    <b>700,000</b>
+                </div>
+                <div class="noval">
+                    <b>Containers Moved</b>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="w1"></div>
+            <div class="wrld">
+                <div class="wrldl">
+                    <b style="font-size: 29px;font-family:Ubuntu,sans-serif;">One Stop Solution for Your</b>
+                    <br>
+                    <b style="font-size: 29px;font-family:Ubuntu,sans-serif;">Supply Chain</b>
+                    <br>
+                    <p style="font-size: 9.5px;font-family:PT Sans,sans-serif;">Connected Shipping, Finance, and Trade-tech, to Power Global Trade and Supply Chains.</p>
+                </div>
+                <div class="wrldr">
+                    <img src="https://www.cogoport.com/_next/image?url=https%3A%2F%2Fcdn.cogoport.io%2Fcms-prod%2Fcogo_public%2Fvault%2Foriginal%2Fmap-supply-chain.png&w=384&q=75">
+                </div>
+            </div>
+    
+            <div class="op">
+                <b style="font-size: 28px;font-family:Ubuntu,sans-serif;">Our Products</b>
+            </div>
+    
+            <div class="tbl">
+                <div class="tblr">
+                    <div class="tblt">
+                        <div class="tbltt">End to End Cross Border Logistics</div>
+                    </div>
+                    <div class="tblc">
+                        <div class="tblic">
+                            <img class="svg1" src="./Pictures/ofcl.PNG">
+                            <b>Ocean: FCL</b>
+                            <p class="fom"><b>Find out more</b> &#8594;</p>
+                        </div>
+                        <div class="tblic">
+                            <img class="svg1" src="./Pictures/olcl.PNG">
+                            <b >Ocean: LCL</b>
+                            <p class="fom"><b>Find out more</b> &#8594;</p>
+                        </div>
+                        <div class="tblic">
+                            <img class="svg1" src="./Pictures/ia.PNG">
+                            <b>International Air</b>
+                            <p class="fom"><b>Find out more</b> &#8594;</p>
+                        </div>
+                        <div class="tblic">
+                            <img class="svg1" src="./Pictures/cch.PNG">
+                            <b>Customs, CFS, & Handling</b>
+                            <p class="fom"><b>Find out more</b> &#8594;</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tblr">
+                    <div class="tblt">
+                        <div class="tbltt">Domestic Logistics</div>
+                    </div>
+                    <div class="tblc">
+                        <div class="tblic">
+                            <img class="svg1" src="./Pictures/fp.PNG">
+                            <b>FTL, PTL</b>
+                            <p class="fom"><b>Find out more</b> &#8594;</p>
+                        </div>
+                        <div class="tblic">
+                            <img class="svg1" src="./Pictures/trch.PNG">
+                            <b >Trailer & Rail Container Haulage</b>
+                            <p class="fom"><b>Find out more</b> &#8594;</p>
+                        </div>
+                        <div class="tblicb">
+                            <img >
+                            <b></b>
+                            <p class="fom"></p>
+                        </div>
+                        <div class="tblicb">
+                            <img >
+                            <b></b>
+                            <p class="fom"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tblr">
+                    <div class="tblt">
+                        <div class="tbltt">Supply Chain Solutions</div>
+                    </div>
+                    <div class="tblc">
+                        <div class="tblic">
+                            <img class="svg1" src="./Pictures/ca.PNG">
+                            <b>CogoAssured</b>
+                            <p class="fom"><b>Find out more</b> &#8594;</p>
+                        </div>
+                        <div class="tblic">
+                            <img class="svg1" src="./Pictures/df.PNG">
+                            <b >Domestic Fulfilment</b>
+                            <p class="fom"><b>Find out more</b> &#8594;</p>
+                        </div>
+                        <div class="tblic">
+                            <img class="svg1" src="./Pictures/dtds.PNG">
+                            <b>Door to Door Shipments</b>
+                            <p class="fom"><b>Find out more</b> &#8594;</p>
+                        </div>
+                        <div class="tblic">
+                            <img class="svg1" src="./Pictures/car.PNG">
+                            <b>Cargo Insurance</b>
+                            <p class="fom"><b>Find out more</b> &#8594;</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tblr">
+                    <div class="tblt">
+                        <div class="tbltt">Financial Services</div>
+                    </div>
+                    <div class="tblc">
+                        <div class="tblic">
+                            <img class="svg1" src="./Pictures/pl.PNG">
+                            <b>Pay Later</b>
+                            <p class="fom"><b>Find out more</b> &#8594;</p>
+                        </div>
+                        <div class="tblic">
+                            <img class="svg1" src="./Pictures/ef.PNG">
+                            <b >Export Factoring</b>
+                            <p class="fom"><b>Find out more</b> &#8594;</p>
+                        </div>
+                        <div class="tblicb">
+                            <img  >
+                            <b></b>
+                            <p class="fom"></p>
+                        </div>
+                        <div class="tblicb">
+                            <img >
+                            <b></b>
+                            <p class="fom"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tblr">
+                    <div class="tblt">
+                        <div class="tbltt">Trade Management Solutions</div>
+                    </div>
+                    <div class="tblc">
+                        <div class="tblic">
+                            <img class="svg1" src="./Pictures/fr.PNG">
+                            <b>Freight Rates & Schedules</b>
+                            <p class="fom"><b>Find out more</b> &#8594;</p>
+                        </div>
+                        <div class="tblic">
+                            <img class="svg1" src="./Pictures/qpq.PNG">
+                            <b >Quick Premium Quotations</b>
+                            <p class="fom"><b>Find out more</b> &#8594;</p>
+                        </div>
+                        <div class="tblic">
+                            <img class="svg1" src="./Pictures/datc.PNG">
+                            <b>Duties & Taxes Calculator</b>
+                            <p class="fom"><b>Find out more</b> &#8594;</p>
+                        </div>
+                        <div class="tblic">
+                            <img class="svg1" src="./Pictures/tav.PNG">
+                            <b>Tracking & Visibility</b>
+                            <p class="fom"><b>Find out more</b> &#8594;</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tb">
+            <div class="tb1"><b>Trusted by</b></div>
+        </div>
+
+        <div class="mq">
+            <marquee class="mqd">
+                <img class="mqi" src="./Pictures/air-asia-logo-1.webp">
+                <img class="mqi" src="./Pictures/tvs-logo-1.webp">
+                <img class="mqi" src="./Pictures/voltas-logo-1.webp">
+                <img class="mqi" src="./Pictures/utltratech_logo.webp">
+                <img class="mqi" src="./Pictures/bhilosa_logo.webp">
+                <img class="mqi" src="./Pictures/reliance_logo.webp">
+                <img class="mqi" src="./Pictures/pidilight_logo.webp">
+                <img class="mqi" src="./Pictures/vedanta.webp">
+                <img class="mqi" src="./Pictures/bluestar_logo.webp">
+                <img class="mqi" src="./Pictures/ais-logo-1.webp">
+                <img class="mqi" src="./Pictures/jsw-logo-new.webp">
+                <img class="mqi" src="./Pictures/bombay-dyeing-logo-1.webp">
+            </marquee>
+        </div>
+
+        <div class="r">
+            <div class="r1">
+                <div class="r11">
+                    Ready to take your Supply Chain to the Next Level?
+                </div>
+                <div class="r12">
+                    Get Started <i class="fa fa-caret-right" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="is">
+            <div class="ist">
+                Industries Served
+            </div>
+            <div class="isl">
+                <div class="isl1">
+                    <div class="islp">
+                        <img class="islp1" src="./Pictures/chemical.svg">
+                    </div>
+                    <div class="islt">
+                        Chemicals
+                    </div>
+                </div>
+                <div class="isl1">
+                    <div class="islp">
+                        <img class="islp1" src="./Pictures/paracetamol.svg">
+                    </div>
+                    <div class="islt">
+                        Pharmaceuticals
+                    </div>
+                </div>
+                <div class="isl1">
+                    <div class="islp">
+                        <img class="islp1" src="./Pictures/electronics.svg">
+                    </div>
+                    <div class="islt">
+                        Electronics
+                    </div>
+                </div>
+                <div class="isl1">
+                    <div class="islp">
+                        <img class="islp1" src="./Pictures/whitegoods.svg">
+                    </div>
+                    <div class="islt">
+                        White Goods
+                    </div>
+                </div>
+                <div class="isl1">
+                    <div class="islp">
+                        <img class="islp1" src="./Pictures/textiles.svg">
+                    </div>
+                    <div class="islt">
+                        Textiles
+                    </div>
+                </div>
+                <div class="isl1">
+                    <div class="islp">
+                        <img class="islp1" src="./Pictures/manufactoring.svg">
+                    </div>
+                    <div class="islt">
+                        Manufacturing
+                    </div>
+                </div>
+                <div class="isl1">
+                    <div class="islp">
+                        <img class="islp1" src="./Pictures/agriculture.svg">
+                    </div>
+                    <div class="islt">
+                        Agriculture
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="nxt">
+            <div class="nxtl">
+                <div class="nxtl1">
+                    <b>Get Started Today</b>
+                </div>
+                <div class="nxtl2">
+                    Plan, Book and Finance your shipment in one place.
+                </div>
+                <div class="nxtl3">
+                    Experience how Cogoport’s Global Trade Platform can Turbocharge your Business.
+                </div>
+                <div>
+                    <button class="gsbtn" style="font-size: 10px;font-family:PT Sans,sans-serif;font-weight: 600;">Get Started<br></button>
+                </div>
+            </div>
+            <div class="nxtr">
+                <img style="justify-self: center; height: 65%; width: 100%;" src="./Pictures/trade-tech-home-1.webp">
+            </div>
+        </div>
+
+        <div class="rd">
+           <div style="background-color: rgba(0, 0, 0, 0.4);">
+            <div class="rd1">
+                <img class="yvpb" src="./Pictures/play-button-white.png">
+            </div>
+           </div>
+        </div>
+
+        <div class="g">
+            <div class="gm">
+                <div class="gml">
+                    <p style="font-family: Ubuntu, sans-sarif;font-size:19px;">Grow Faster with Cogoport</p>
+                    
+                    <p style="font-family: PT Sans, sans-sarif;font-size:12px;">Know more about Cogoport’s Global Trade Platform<sup>TM</sup></p>
+                </div>
+                <div class="gmr">
+                    Know More <i class="fa fa-caret-right" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+        
+        <div class="blogs">
+            <b>Blogs</b>
+        </div>
+
+        <div class="wb">
+            <div class="ib">
+                <div class="ibp1">
+                    <img class="ibp" src="./Pictures/Envirotainer_Banner.webp">
+                </div>
+                <div class="ibd">
+                    <h4 class="tn">
+                        Trade News
+                    </h4>
+                    <h4 class="tn1">
+                        Cogoport Enables Movement of 11 Envirotainer Containers from India to Italy&nbsp;
+                    </h4>
+                    <p class="tn2">
+                        Cogoport’s collective logistics and technical expertise came in handy as our operations and technical teams went the extra mile and designed bespoke solutions on the go.
+                    </p>
+                    <div class="ibdd">
+                        <span class="tn3">
+                            <b>Read More &#8594;</b>
+                        </span>
+                        <span class="tn4">
+                            <b>05 July 2023</b>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="ib">
+                <div class="ibp1">
+                    <img class="ibp" src="./Pictures/Cogoport_Positioning_Banner.webp">
+                </div>
+                <div class="ibd">
+                    <h4 class="tn">
+                        Expert Speak
+                    </h4>
+                    <h4 class="tn1">
+                        Cogoport: A Global Trade Platform&nbsp;
+                    </h4>
+                    <p class="tn2">
+                        Cogoport leverages technology and caters to enterprises of all sizes. Our solutions improve predictability and enhance human capabilities.
+                    </p>
+                    <div class="ibdd">
+                        <span class="tn3">
+                            <b>Read More &#8594;</b>
+                        </span>
+                        <span class="tn4">
+                            <b>03 July 2023</b>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="ib">
+                <div class="ibp1">
+                    <img class="ibp" src="./Pictures/Eng_2405_Banner.webp">
+                </div>
+                <div class="ibd">
+                    <h4 class="tn">
+                        Industry Basics
+                    </h4>
+                    <h4 class="tn1">
+                        Understanding Lean Supply Chain Management: Definition and Considerations&nbsp;
+                    </h4>
+                    <p class="tn2">
+                        Lean Supply Chain Management represents the extension of Lean Thinking across the entire supply chain. So, what are the benefits and key components? Read on!
+                    </p>
+                    <div class="ibdd">
+                        <span class="tn3">
+                            <b>Read More &#8594;</b>
+                        </span>
+                        <span class="tn4">
+                            <b>24 June 2023</b>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <div class="va">
+            <button class="vab" style="font-size: 10px;font-family:PT Sans,sans-serif;font-weight: 600;">View All<br></button>
+        </div>
+
+        <div class="s">     
+            <div class="w1"></div>  
+            <div class="rnd">
+                <div class="sl">
+                    <img class="sli" src="./Pictures/cogoport-subscribe.webp">
+                </div>
+                <div class="sr">
+                    <div class="srt">
+                        <b style="font-family: Ubuntu, sans-sarif;font-size:21px;">Subscribe to our newsletter now!</b>
+                        <b style="font-family: PT Sans, sans-sarif;font-size:10px;">Don’t miss out on the latest happenings at Cogoport.</b>
+                    </div>
+                    <div class="srb">
+                        <div class="srbl">
+                            <input type="email" placeholder="Enter your email here" required value>
+                        </div>
+                        <div class="srbr">
+                            <button class="sb"><b>Subscribe &#8594;</b></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="l">
+            <div class="fi">
+                <div class="f1">
+                    <span class="ll1"><u><b>Products</b></u></span>
+                    <span class="ff2">Global Trade Platform</span>
+                    <span class="ll2"><b>Cross-border Logistic</b></span>
+                    <span class="ff2">Ocean: FCL</span>
+                    <span class="ff2">Ocean: LCL</span>
+                    <span class="ff2">International Air</span>
+                    <span class="ff2">Customs, CFS, and Handling</span>
+                    <span class="ll2"><b>Domestic Logistics</b></span>
+                    <span class="ff2">Surface: FTL, PTL, Rail</span>
+                    <span class="ff2">Trailer & Rail Container Haulage</span>
+                    <span class="ll2"><b>Trade Management Solutions</b></span>
+                    <span class="ff2">Freight Rates & Schedules</span>
+                    <span class="ff2">Quick Premium Quotations</span>
+                    <span class="ff2">Duties & Taxes Calculator</span>
+                    <span class="ff2">Tracking & Visibility</span>
+                    <span class="ll2"><b>CogoMaps</b></span>
+                    <span class="ff2">Shipment Planner</span>
+                    <span class="ff2">Trade Info</span>
+                    <span class="ff2">Global Routes</span>
+                    <span class="ff2">Live Congestion</span>
+                </div>
+                <div class="f1">
+                    <span class="ll1 l4">Products</span>
+                    <span class="ll2"><b>Supply Chain Solutions</b></span>
+                    <span class="ff2">CogoAssured</span>
+                    <span class="ff2">Fulfilment Logistics</span>
+                    <span class="ff2">Door to Door Shipments</span>
+                    <span class="ff2">Cargo Insurance</span>
+                    <span class="ll2"><b>Financial Services</b></span>
+                    <span class="ff2">Pay Later</span>
+                    <span class="ff2">Export Factoring</span>
+                    <span class="ff2">CogoFx</span>
+                </div>
+                <div class="f1">
+                    <span class="ll1"><u><b>Partners</b></u></span>
+                    <span class="ff2">Global Partner Network</span>
+                    <span class="ll2"><b>Our Logistic Providers</b></span>
+                    <span class="ff2">Freight Providers</span>
+                    <span class="ff2">Transporters</span>
+                    <span class="ff2">Cutom Agents</span>
+                    <span class="ll2"><b>Partnership Program</b></span>
+                    <span class="ff2">Channel Partners</span>
+                    <span class="ff2">Overseas Agents</span>
+                </div>
+                <div class="f1">
+                    <span class="ll1"><u><b>Tools</b></u></span>
+                    <span class="ff2">Rate Discovery</span>
+                    <span class="ff2">Freight Rate Trends</span>
+                    <span class="ff2">Tracking</span>
+                    <span class="ff2">HS Code Finder</span>
+                    <span class="ff2">Personal Trade Assistant</span>
+                </div>
+                <div class="f1">
+                    <span class="ll1"><u><b>Company</b></u></span>
+                    <span class="ff2">About Us</span>
+                    <span class="ff2">Careers</span>
+                    <span class="ff2">Newsroom</span>
+                    <span class="ff2">Leadership</span>
+                    <span class="ff2">Login</span>
+                    <span class="ff2">Sign Up</span>
+                </div>
+                <div class="f1">
+                    <span class="ll1"><u><b>Knowledge Center</b></u></span>
+                    <span class="ff2">Blogs</span>
+                    <span class="ff2">News & Updates</span>
+                    <span class="ff2">Events</span>
+                    <span class="ff2">Reports</span>
+                    <span class="ff2">Notifications</span>
+                    <span class="ll2"><b>Resources</b></span>
+                    <span class="ff2">Port Info</span>
+                    <span class="ff2">Shipping Terms</span>
+                    <span class="ff2">Help Center</span>
+                    <span class="ff2">Incoterms</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="f">
+            <div class="fi">
+                <div class="f1">
+                    <span class="ff1">Pipavav (Victor) Port to Kamalapur/Dhaka (BD)</span>
+                    <span class="ff1">Chittagong to Atlanta (Georgia)</span>
+                    <span class="ff1">Chittagong to Nashville</span>
+                    <span class="ff1">Da Nang to Chittagong</span>
+                    <span class="ff1">Chittagong to Buenaventura</span>
+                    <span class="ff1">Chittagong to Greer (US)</span>
+                    <span class="ff1">Chittagong to Saint Louis Du Rhone</span>
+                    <span class="ff1">Cat Lai to Chittagong</span>
+                    <span class="ff1">Krishnapatnam to Chittagong</span>
+                    <span class="ff1">Chittagong to Arica</span>
+                </div>
+                <div class="f1">
+                    <span class="ff1">Chittagong to Puerto Quetzal</span>
+                    <span class="ff1">Mundra to Chittagong</span>
+                    <span class="ff1">Chittagong to Kolkata</span>
+                    <span class="ff1">Chittagong to Acajutla</span>
+                    <span class="ff1">Chittagong to Port Chicago , Illinois</span>
+                    <span class="ff1">Chittagong to Oakland</span>
+                    <span class="ff1">Chittagong to Savannah, Georgia</span>
+                    <span class="ff1">Jawaharlal Nehru (Nhava Sheva) to Chittagong</span>
+                    <span class="ff1">Ho Chi Minh City to Chittagong</span>
+                    <span class="ff1">Chittagong to Novorossiysk</span>
+                </div>
+                <div class="f1">
+                    <span class="ff1">Pipavav (Victor) Port to Chittagong</span>
+                    <span class="ff1">Cat Lai to Chittagong</span>
+                    <span class="ff1">Chittagong to Puerto Caldera</span>
+                    <span class="ff1">Chittagong to Chicago (Inland), Illinois</span>
+                    <span class="ff1">Kolkata to Chittagong</span>
+                    <span class="ff1">Ho Chi Minh City to Chittagong</span>
+                    <span class="ff1">Chittagong to Africa</span>
+                    <span class="ff1">Chittagong to Novorossiysk</span>
+                    <span class="ff1">Vizag to Chittagong</span>
+                    <span class="ff1">Chittagong to Pittsburgh</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="la">
+            <div class="lad">
+                <div class="lal">
+                    <span class="lalt">
+                        <b>© 2023 Cogo Universe PTE. All rights reserved.</b>
+                    </span>
+                    <span class="lalt">
+                        <b>Terms and Conditions | Cookie policy | Privacy and Data Protection Policy</b>
+                    </span>
+                </div>
+                <div class="lar">
+                    <img class="globe" src="./Pictures/globe.webp">
+                    <span class="lalp"><b><u>English (IN)</u></b></span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 14 14" width="14" height="14" role="img"><path class="lalo" d="M2.158 1.038c-.506.112-.92.494-1.089 1.004a1.672 1.672 0 0 0-.002.863c.147.466.501.818.986.983.098.033.198.043.42.043.353.001.544-.052.802-.221a1.45 1.45 0 0 0 .668-1.23c0-.262-.032-.401-.155-.657a1.467 1.467 0 0 0-1.63-.785m7.455 3.755c-.75.134-1.418.542-1.818 1.113l-.118.168V4.993l-1.184.006-1.185.006-.006 3.996-.005 3.996h2.38v-2.234c0-2.379.003-2.467.114-2.789.164-.475.491-.796.937-.917.07-.019.232-.041.36-.048.711-.041 1.167.306 1.369 1.041l.054.198.007 2.375.007 2.374h2.472l-.001-2.608c0-1.617-.009-2.713-.024-2.885-.13-1.476-.878-2.402-2.163-2.675-.294-.062-.94-.082-1.196-.036M1.237 8.995v4.002H3.71V4.993H1.237v4.002" fill-rule="evenodd"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 14 14" width="14" height="14" role="img"><path class="lalo" d="M7.303 1.03c-.914.095-1.571.513-1.851 1.177-.166.396-.202.72-.202 1.84v.876H3.99v2.054h1.26v6.02h2.427V6.953h1.678l.012-.075c.007-.042.044-.454.083-.916.039-.462.078-.885.085-.94l.014-.099H7.674l.007-.74c.007-.724.009-.744.062-.853a.337.337 0 0 1 .152-.163c.093-.05.123-.052.873-.06l.775-.007V1.003l-1.02.003c-.562.002-1.111.013-1.22.024" fill-rule="evenodd"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 14 14" width="14" height="14" role="img"><path class="lalo" d="M4.62 1.019c-.701.029-1.393.178-1.82.392-1.061.531-1.653 1.504-1.774 2.917-.018.208-.023 1.107-.017 2.859.01 2.757.004 2.626.137 3.236.098.452.241.787.495 1.159.46.672 1.164 1.109 2.09 1.297.508.103.551.105 3.234.105 2.744.001 2.716.002 3.371-.118 1.471-.269 2.483-1.459 2.615-3.078.012-.141.028-1.291.037-2.555.016-2.417.009-2.688-.086-3.336-.059-.402-.099-.563-.212-.855-.369-.955-1.2-1.647-2.272-1.894-.575-.133-.498-.13-3.161-.133-1.354-.002-2.541 0-2.637.004M9.17 2.1c1.069.057 1.516.187 1.966.568.27.23.547.668.635 1.007.046.175.097.611.128 1.096.03.453.03 2.896.001 4.084-.025 1.039-.067 1.339-.248 1.769a2.029 2.029 0 0 1-1.385 1.156c-.483.117-.615.126-1.949.136-1.703.013-4.024-.026-4.258-.071-.671-.13-1.011-.297-1.359-.665-.367-.389-.528-.845-.6-1.695-.032-.376-.032-4.626 0-4.982.031-.343.104-.759.165-.942a2.13 2.13 0 0 1 .645-.938c.178-.147.552-.339.771-.394.178-.045.684-.1 1.171-.126.507-.027 3.823-.03 4.317-.003m.79 1.014a.737.737 0 0 0-.443.457.949.949 0 0 0 .048.54.776.776 0 0 0 .328.326c.088.045.141.055.315.055.19 0 .223-.007.335-.07a.721.721 0 0 0-.083-1.305.975.975 0 0 0-.5-.003m-3.494.844c-.243.04-.619.164-.846.279-.742.374-1.284 1-1.549 1.791a2.805 2.805 0 0 0-.151.958c0 .686.188 1.276.578 1.817a3.083 3.083 0 0 0 3.377 1.148 3.155 3.155 0 0 0 1.589-1.106c.184-.245.408-.688.488-.97a3.087 3.087 0 0 0-2.448-3.919 4.053 4.053 0 0 0-1.038.002m.888 1.069a2.005 2.005 0 0 1 1.597 1.546c.059.255.053.657-.013.905a1.997 1.997 0 0 1-.595.987c-.162.153-.25.215-.44.308-.346.171-.543.218-.915.217a1.727 1.727 0 0 1-.886-.205c-.4-.2-.705-.508-.9-.91a1.678 1.678 0 0 1-.201-.782 1.856 1.856 0 0 1 .135-.839 2.04 2.04 0 0 1 1.533-1.237c.181-.03.503-.026.685.01" fill-rule="evenodd"></path></svg>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="wa">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14" width="25px" height="25px" role="img" class="styles_whatsapp_icon__fcR5q"><path class="ic-c-whatsapp_svg__ic_c_whatsapp" fill="#BFC8D0" fill-rule="evenodd" d="M6.793 13a5.793 5.793 0 1 0-5.04-2.936L1 13l3.027-.702A5.767 5.767 0 0 0 6.793 13Zm0-.891a4.902 4.902 0 1 0-4.017-2.092l-.44 1.646 1.676-.419a4.88 4.88 0 0 0 2.781.865Z" clip-rule="evenodd"></path><path class="ic-c-whatsapp_svg__ic_c_whatsapp" fill="url(#ic-c-whatsapp_svg__a)" d="M11.759 6.793a4.966 4.966 0 0 1-7.783 4.09l-1.697.424.445-1.668a4.966 4.966 0 1 1 9.035-2.846Z"></path><path class="ic-c-whatsapp_svg__ic_c_whatsapp" fill="#fff" fill-rule="evenodd" d="M6.793 12.586a5.793 5.793 0 1 0-5.04-2.936L1 12.586l3.027-.702a5.767 5.767 0 0 0 2.766.702Zm0-.891a4.902 4.902 0 1 0-4.017-2.092l-.44 1.646 1.676-.418a4.88 4.88 0 0 0 2.781.864Z" clip-rule="evenodd"></path><path class="ic-c-whatsapp_svg__ic_c_whatsapp" fill="#fff" d="M5.345 4.104c-.138-.277-.35-.253-.563-.253-.381 0-.976.457-.976 1.308 0 .697.307 1.46 1.342 2.6.999 1.102 2.311 1.672 3.4 1.653 1.09-.02 1.314-.957 1.314-1.274 0-.14-.087-.21-.147-.23-.371-.177-1.056-.51-1.212-.572-.156-.062-.237.022-.287.068-.142.135-.422.532-.518.62-.096.09-.239.045-.298.011-.219-.088-.813-.352-1.286-.81-.585-.568-.62-.763-.73-.936-.088-.14-.023-.225.01-.262.125-.145.3-.37.378-.482.078-.111.016-.28-.022-.386-.16-.454-.295-.834-.405-1.055Z"></path><defs><linearGradient id="ic-c-whatsapp_svg__a" x1="11.138" x2="1.828" y1="3.069" y2="11.759" gradientUnits="userSpaceOnUse"><stop stop-color="#5BD066"></stop><stop offset="1" stop-color="#27B43E"></stop></linearGradient></defs></svg>
+            <div class="wat">
+                Whatsapp Us
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
